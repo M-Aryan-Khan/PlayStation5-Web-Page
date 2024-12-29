@@ -1,0 +1,1213 @@
+/* Navbar styles */
+.navbar-glass {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.navbar-transparent {
+  background: rgba(255, 255, 255, 0);
+  backdrop-filter: none;
+  box-shadow: none;
+  border: none;
+}
+a {
+  text-decoration: none;
+}
+.SearchBar{
+  background: rgba(255, 255, 255, 0);
+  backdrop-filter: none;
+  box-shadow: none;
+  border: none;
+}
+
+.text-white {
+  color: white !important;
+}
+
+.text-white:hover {
+  color: #497bfe !important;
+}
+
+.logo {
+  width: 3rem;
+  margin-left: 8rem;
+}
+
+.user {
+  width: 1.5rem;
+  margin-left: 3rem;
+  margin-right: 8rem;
+}
+
+.search {
+  width: 1.5rem;
+  margin-right: 2rem;
+}
+
+.active-link {
+  color: #497bfe;
+}
+
+.inactive-link {
+  color: rgb(44, 40, 40);
+}
+
+.inactive-link:hover {
+  color: #497bfe;
+}
+
+.nav-item.active .nav-link {
+  color: #497bfe;
+}
+
+.nav-link {
+  color: rgb(44, 40, 40);
+  font-weight: 600;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.nav-link:hover {
+  color: #497bfe;
+}
+
+.NavD-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 3rem;
+}
+input.form-control {
+  background: transparent;
+  color: black;
+  border: 1px solid black;
+}
+
+input.form-control::placeholder {
+  color: black;
+}
+
+.navbar-transparent input.form-control {
+  color: white;
+  border: 1px solid white;
+}
+
+.navbar-transparent input.form-control::placeholder {
+  color: white;
+}
+
+.navbar-transparent input.form-control:focus {
+  background: transparent;
+  color: inherit;
+  border-color: white;
+  color:white;
+  box-shadow: none; 
+}
+.navbar-toggler.navbar-toggler-white {
+  border-color: rgb(255, 255, 255);
+}
+
+.navbar-toggler.navbar-toggler-white .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-width='2' linecap='round' linejoin='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+@media (max-width: 768px) {
+  .logo {
+    width: 2.75rem;
+    margin-left: -0.5rem !important;
+  }
+  .navbar-toggler{
+    margin-right: 2rem !important
+  }
+  .user {
+    width: 1.2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .search {
+    width: 1.2rem;
+    margin-right: 1rem;
+  }
+
+  .nav-link {
+    margin-left: 5px;
+  }
+
+  .NavD-flex {
+    margin-right: 1rem;
+  }
+  .navbar-nav {
+    margin: 0 !important;
+    margin-top: 1rem !important;
+    margin-bottom: 1rem !important;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .navbar-nav li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 40%;
+  }
+  .navbar-nav li a{
+    align-self: center;
+  }
+  .user{
+    margin-right: 0rem;
+  }
+  .navbar-collapse form{
+    padding-left: 4rem;
+    padding-right: 3rem;
+    margin-bottom: 1rem;
+  }
+  .navbar-little-black {
+    background: rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*Front Page*/
+.frontPageContainer {
+  margin-left: 10.5rem;
+  margin-top: 1.5rem;
+}
+
+.PS5_Logo {
+  margin-top: 10rem;
+  width: 9rem;
+  margin-left: 0.5rem;
+}
+.PS5_LogoCenter{
+  display: none;
+}
+.lineContainer {
+  border-left: 4px solid;
+}
+
+.h2LeftContainer {
+  font-weight: 700;
+  color: rgb(61, 61, 61);
+}
+
+.leftOfLeftContainerFrontPage {
+  margin: 0;
+  width: 45%;
+}
+
+ul li {
+  color: #497bfe;
+  margin-left: -15px;
+}
+
+.RightFrontPageContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  max-width: 550px;
+  margin: auto;
+  margin: 0;
+}
+
+.slider {
+  margin-left: 2rem;
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slides {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  display: none;
+  object-fit: cover;
+}
+
+.slides.active {
+  display: block;
+}
+
+.thumbnails {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.thumbnail {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 0.3s;
+}
+
+.thumbnail.selected {
+  opacity: 1;
+}
+
+.thumbnail:hover {
+  opacity: 1;
+}
+@media (max-width: 768px) {
+  .frontPageContainer {
+    margin-left: 0rem;
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .PS5_Logo {
+    display: none;
+  }
+  .PS5_LogoCenter{
+    margin-top: 3rem;
+    width: 10rem;
+    display: block;
+    align-self: center;
+  }
+  .leftOfLeftContainerFrontPage {
+    width: 100%;
+  }
+  .lineContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-left: 0px solid;
+    padding: 1rem !important;
+  }
+  .RightFrontPageContainer {
+    margin: 0 !important;
+    padding: 1rem !important;
+    padding: 0rem !important;
+  }
+  .slider {
+    margin-top: -2rem;
+    height: 350px;
+    margin-left: 0rem;
+  }
+  .thumbnails {
+    margin-top: 1rem;
+  }
+  .slides {
+    width: 80%;
+  }
+  .lineContainer p{
+    text-align: center;
+  }
+  .AccGameContainer{
+    display: none;
+  }
+  .thumbnail{
+    width: 80%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*PS5 Specs Page*/
+.PS5_SpecOverview {
+  margin-left: 8rem;
+  font-weight: 500;
+}
+
+.PS5_SpecKitImage {
+  margin-right: 5rem;
+  margin-top: 3rem;
+  width: 70%;
+}
+
+.PS5_SpecContainer {
+  margin-left: 6rem;
+}
+
+.PS5_SpecH3 {
+  color: rgb(61, 56, 56);
+}
+
+.PS5_SpecSpan {
+  width: 40%;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .PS5_SpecOverview {
+    margin-left: 0rem;
+    font-weight: 500;
+    align-self: center !important;
+  }
+  .PS5_SpecContainer {
+    margin-left: 0rem;
+  }
+  .PS5_SpecKitImage {
+    margin-right: 0rem;
+    margin-top: 2rem;
+    width: 100%;
+  }
+  .PS5_SpecSpan {
+    width: 90%;
+    text-align: center;
+  }
+  .PS5_SpecH3 {
+    margin-top: 2rem !important;
+    margin-bottom: 0rem !important;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/* Games Specs styles */
+.Ps5GameSpecsPage {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-image: url("../resources/spidermanGame.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-attachment: fixed;
+}
+
+.Ps5GameSpecsOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 0;
+}
+
+.Ps5GameSpecsContainer {
+  position: relative;
+  z-index: 1;
+  color: rgb(227, 217, 217);
+  text-align: center;
+  padding: 2rem;
+}
+
+.Ps5GameSpecsh1,
+.Ps5GameSpecsh2 {
+  margin: 0.5rem 0;
+}
+
+.Ps5GameSpecsp {
+  margin: 0.5rem 0 1.5rem;
+  width: 75%;
+}
+
+.Ps5GamesSpecsBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+
+.Ps5GamesSpecsBoxCenter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.Ps5GameSpecspMobile{
+  display: none;
+}
+@media (max-width: 768px) {
+.Ps5GamesSpecsBox p{
+  display: none;
+}
+.ToBeCol{
+  margin-top: 1rem;
+  flex-direction: column;
+}
+.Ps5GameSpecspMobile{
+  display: block !important;
+  width: 90%;
+}
+.Ps5GamesSpecsBoxCenter p{
+  width: 90%;
+}
+.Ps5GameSpecsp {
+  width: 100%;
+}
+.Ps5GameSpecsContainer {
+  margin-top: -0.5rem !important;
+  padding: 0;
+}
+.Ps5GamesSpecsBoxCenter{
+  margin-bottom: 0 !important;
+  margin-top: 0rem !important;
+}
+.ToHide{
+  display: none;
+}
+}
+
+
+
+
+
+
+/* Headphones page styles */
+.HeadphonesD-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.HeadphonesH2 {
+  color: rgb(61, 56, 56);
+}
+
+.HeadphonesP {
+  color: rgb(42, 39, 39);
+  text-align: center;
+  width: 75%;
+}
+
+.HeadphonesP2 {
+  color: rgb(42, 39, 39);
+  text-align: center;
+  width: 95%;
+}
+
+.HeadphonesImage {
+  width: 300px;
+}
+
+.HeadphonesP2Flex {
+  text-align: center;
+  width: 70%;
+}
+
+.LearnMoreButtonContainer {
+  height: 100px;
+}
+
+.SpecsLearnMorebtn {
+  padding: 1rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  background-color: #4a7afe;
+  color: white;
+  border: none;
+  border-radius: 1rem;
+}
+
+.SpecsLearnMorebtn:hover {
+  background-color: white;
+  color: #497bfe;
+  border: 1px solid #497bfe;
+  border-radius: 1rem;
+}
+@media (max-width: 768px){
+  .Ps5GamesSpecsBox {
+    width: 100%;
+  }
+  .HeadphonesP {
+    color: rgb(42, 39, 39);
+    text-align: center;
+    width: 90%;
+  }
+  .HeadphonesImage {
+    width: 250px;
+  }
+  .HeadphonesP2 {
+    color: rgb(42, 39, 39);
+    text-align: center;
+    width: 90%;
+  }
+  .HeadphonesD-flex .Ps5GamesSpecsBox p{
+    display: block;
+  }
+}
+
+
+
+
+
+
+
+/* Controllers page styles */
+.ConntrollersD-flex{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.ControllersFlex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ControllersImage {
+  width: 500px;
+}
+
+.Ps5ContollersSpecsBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+}
+@media (max-width: 768px) {
+  .ControllersImage {
+    width: 300px;
+  }
+  .ControllersFlex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .Ps5ContollersSpecsBox {
+    width: 100%;
+  }
+  .HeadphonesP2Flex {
+    width: 90%;
+  }
+  .ConntrollersD-flex{
+    margin-top: 0 !important;
+  }
+  .ConntrollersD-flex .Ps5GamesSpecsBox p{
+    display: block;
+  }
+}
+
+
+
+/* Hardware page styles */
+.HardwarefrontPageContainer {
+  margin-left: 10.5rem;
+  margin-top: 4rem;
+}
+
+.HardwarePS5_Logo {
+  margin-top: 4rem;
+  width: 9rem;
+  margin-left: 0.75rem;
+}
+
+.HardwarelineContainer {
+  border-left: 4px solid;
+}
+
+.Hardwareh2LeftContainer {
+  font-weight: 700;
+  color: rgb(61, 61, 61);
+}
+
+.HardwareleftOfLeftContainerFrontPage {
+  width: 45%;
+}
+.HardwareAccessories,
+.HardwareOverview,
+.HardwareGames,
+.FrontPageAccessories,
+.FrontPageOverview,
+.FrontPageGames {
+  font-weight: 500;
+}
+
+.HardwareContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  max-width: 550px;
+  margin-left: 2rem;
+}
+
+.Hardwareslider {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Hardwareslides {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  display: none;
+  object-fit: cover;
+}
+
+.slide-controller {
+  width: 100%;
+}
+
+.slide-charger {
+  width: 100%;
+}
+
+.slide-headphones {
+  width: 80%;
+}
+
+.slide-remote {
+  width: 70%;
+}
+
+.slide-camera {
+  width: 100%;
+}
+
+.Hardwareslides.active {
+  display: block;
+}
+
+.rightHardwareContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.nav-arrow {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.nav-dots {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-dot {
+  width: 40px;
+  height: 2px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.nav-dot.active {
+  background: #4a7afe;
+}
+.HardwarefrontPageContainer .PS5_LogoCenter{
+  display: none;
+}
+@media (max-width: 768px) {
+.HardwarefrontPageContainer {
+  padding: 0 !important;
+  margin-left: 0;
+  margin-top: 0;
+  flex-direction: column-reverse;
+}
+.HardwareContainer{
+  margin-top: -2rem !important;
+  margin-left: 0 !important;
+  padding: 1rem !important;
+  max-width: 100%;
+}
+.Hardwareslider{
+  max-height: 350px;
+}
+.HardwarefrontPageContainer .PS5_LogoCenter{
+  display: block;
+  margin-top: 4rem;
+}
+.HardwarePS5_Logo{
+  display: none;
+}
+.nav-dot {
+  width: 20px !important;
+  height: 1px;
+}
+.nav-dots {
+  display: flex;
+  gap: 10px;
+}
+.firstUl,.secondUl{
+  display: none;
+}
+.HardwarelineContainer {
+  border-left: 0px;
+  padding-left: 12px !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.HardwareleftOfLeftContainerFrontPage{
+  width: 100%;
+}
+.Hardwareh2LeftContainer,.HardwarePLeftContainer{
+  text-align: center;
+}
+}
+
+
+
+
+
+
+
+
+/* Games page styles */
+.GamesContainer {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.GameSpiderMan {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-image: url("../resources/milesMorales.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.GameHorizonForbiddenWest {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-image: url("../resources/HorizonForbiddenWest.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.GameResidentEvilVillage{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-image: url("../resources/residentEvilVillage.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.GameGodOfWar{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-image: url("../resources/GodOfWar.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.GameOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+.GamefrontPageContainer {
+  margin-left: 10.5rem;
+  margin-top: 4rem;
+}
+
+.GamePS5_Logo {
+  margin-top: 4rem;
+  width: 11rem;
+}
+
+.GamelineContainer {
+  background: rgba(255, 255, 255, 0);
+  backdrop-filter: none;
+  box-shadow: none;
+  border-left: 4px solid;
+  color: white;
+}
+
+.Gameh2LeftContainer {
+  
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+}
+
+.GameleftOfLeftContainerFrontPage {
+  margin-left: 11rem;
+  margin-top: 5rem;
+  width: 38%;
+}
+
+.GameAccessories,
+.GameOverview,
+.GameGames,
+.FGameAccessories,
+.FrontPageOverview,
+.FrontPageGames {
+  font-weight: 500;
+}
+
+.HardwareContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  max-width: 550px;
+  margin-left: 2rem;
+}
+
+.Hardwareslider {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Hardwareslides {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  display: none;
+  object-fit: cover;
+}
+
+.slide-controller {
+  width: 100%;
+}
+
+.slide-charger {
+  width: 100%;
+}
+
+.slide-headphones {
+  width: 80%;
+}
+
+.slide-remote {
+  width: 70%;
+}
+
+.slide-camera {
+  width: 100%;
+}
+
+.Hardwareslides.active {
+  display: block;
+}
+
+.rightHardwareContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.nav-arrow {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.nav-dots {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-dot {
+  width: 40px;
+  height: 2px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.nav-dot.active {
+  background: #4a7afe;
+}
+
+/*Slider*/
+.game-card {
+  width: 300px;
+  height: 550px;
+  overflow: hidden; 
+  margin: 0 10px;
+  border-radius: 1rem;
+}
+
+.game-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.game-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  padding: 10px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+}
+
+.game-info h5 {
+  text-align: center;
+  font-size: 1.2em;
+  margin-top: 1rem;
+}
+
+.game-info p {
+  height: 7rem;
+  margin-top: 0.5rem;
+  align-self: center;
+  text-align: center;
+  font-size: 0.9em;
+  color: #ffffff;
+}
+.SliderButton{
+  align-self:center;
+}
+.YoutubeTrailer{
+  align-self: center;
+  margin-left: 3rem;
+  border-radius: 1rem;
+}
+
+@media (max-width: 768px) {
+.GameToHide{
+  display: none;
+}
+.GameleftOfLeftContainerFrontPage {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0rem;
+  margin-top:0rem;
+  width: 100%;
+  align-items: center;
+  height: 50%;
+}
+.GameAccessories{
+  align-self: center;
+  font-size: large;
+}
+.GamelineContainer {
+  margin-top: 0rem !important;
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0);
+  backdrop-filter: none;
+  box-shadow: none;
+  border-left: 0px;
+  padding: 1rem !important;
+  padding-top: 0rem !important;
+  color: white;
+}
+.GamelineContainer p{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.GamelineContainer h1{
+  text-align: center;
+}
+.GamelineContainer button{
+  align-self: center;
+  margin-top: 1rem;
+  margin-bottom: 2rem !important;
+  width: 33%;
+}
+.GameOverlay{
+  flex-direction: column;
+}
+.GameOverlay iframe{
+  margin-left: 0;
+  margin-top: 6rem;
+  width: 330px;
+  height: 225px;
+}
+.game-card {
+  width: 200px;
+  height: 350px;
+  overflow: hidden; 
+  margin: 0 10px;
+  border-radius: 1rem;
+}
+.game-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.game-info p{
+  display: none;
+}
+.game-info h5 {
+  height: 50px;
+}
+}
+
+
+/*Services*/
+.ServicesContainer{
+  margin-top: 7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.SignUpForm{
+  background-color: #edf1fc;
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 70vw;
+  height: 63vh;
+  gap: 2.25rem;
+  border-radius: 1rem;
+}
+.Heading{
+  color: #3f73ff;
+  font-size: 80%;
+  width: 100%;
+}
+.SignUpForm input{
+  border-radius: 0.5rem;
+  border: none;
+  width: 50%;
+  height: 2rem;
+}
+.SignUpForm input:focus{
+  outline: none;
+  border-radius: 0.5rem;
+  border: 1px solid #4a7afe;
+  width: 50%;
+  height: 2rem;
+}
+.SignUpForm .DOB{
+  width: 25%;
+}
+.SignUpForm .PP{
+  gap: 0;
+}
+.SignUpForm .DOB input{
+  text-align: center;
+}
+@media (max-width: 768px) {
+.ServicesContainer p{
+  text-align: center;
+}
+.SignUpForm{
+  width: 90vw;
+}
+.SignUpForm .DOB{
+  width: 90%;
+}
+.SignUpForm .PP{
+  width: 95%;
+}
+.SignUpForm{
+  padding-top: 2rem;
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+}
+}
+
+
+
+
+
+.BackTop{
+  font-size: 1.25rem;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 8%;
+  right: 5%;
+  color: white;
+  background-color: #4a7afe;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 999;
+
+}
+.BackTopRed{
+  background-color: rgb(181, 0, 0) !important;
+}
+.icon {
+  animation: gototop 1.2s linear infinite alternate-reverse;
+}
+
+@keyframes gototop {
+  0% {
+    transform: translateY(-0.5rem);
+  }
+  100% {
+    transform: translateY(0.5rem);
+  }
+
+}
